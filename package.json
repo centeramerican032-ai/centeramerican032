@@ -1,0 +1,19 @@
+{
+  "name": "american-pest-site",
+  "version": "0.1.0",
+  "description": "Static site for pest control - tests and tooling",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js",
+    "test:devices": "node tests/device-tests.js",
+    "test:axe": "node tests/axe-static.js",
+    "test:ci": "node tests/axe-static.js && node tests/device-tests.js",
+    "deploy": "echo \"Use GitHub Actions to deploy; push to main to trigger workflow\""
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "axe-core": "^4.11.0",
+    "jsdom": "^27.4.0",
+    "playwright": "^1.57.0"
+  }
+}

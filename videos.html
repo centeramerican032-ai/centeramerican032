@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الفيديوهات — المركز الأمريكي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+    <div class="floating-tools" role="complementary" aria-label="أدوات الوصول السريعة">
+      <a href="https://wa.me/96550255870" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+      <a href="tel:+96550255870" class="floating-btn call-btn" title="اتصال: +965 50255870"><i class="fas fa-phone"></i></a>
+      <a href="https://www.instagram.com/american9center/" class="floating-btn instagram-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://maps.google.com/?q=82JC%2BH9P+شارع+231+مدينة+الكويت" class="floating-btn location-btn" target="_blank" rel="noopener noreferrer" aria-label="العنوان على خريطة جوجل" title="شارع 231 - مدينة الكويت (82JC+H9P)"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+    <a href="index.html" class="floating-btn site-icon" aria-label="الموقع" title="الموقع"><img src="images/logo.svg" alt="المركز الأمريكي"/></a>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">المركز <span>الأمريكي</span></a>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="articles.html">المقالات</a>
+                <a href="videos.html" class="active">الفيديوهات</a>
+                <a href="https://www.instagram.com/american9center/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+    <section class="section pt-100">
+        <div class="container">
+            <h1 class="section-title">الفيديوهات التعليمية</h1>
+            <p class="lead">شاهد فيديوهات التوعية وعمليات المكافحة من فريقنا — جميع الفيديوهات المحلية متاحة هنا.</p>
+
+            <div class="video-grid" style="display: flex; justify-content: center; align-items: center; min-height: 300px;">
+                <div style="text-align: center; padding: 40px; background: #f0f8f0; border-radius: 12px; max-width: 600px;">
+                    <i class="fas fa-video" style="font-size: 48px; color: #0d5d0d; margin-bottom: 20px; display: block;"></i>
+                    <h3 style="color: #0d5d0d; margin-bottom: 15px;">الفيديوهات قيد الإعداد</h3>
+                    <p style="color: #1a1a1a; font-size: 1.05rem; line-height: 1.6;">نحن نعمل على إضافة فيديوهات تعليمية محلية توضح طرق المكافحة والوقاية من الحشرات.</p>
+                    <p style="color: #666; margin-top: 15px;">يمكنك التواصل معنا عبر <a href="https://wa.me/96550255870" style="color: #0d5d0d; font-weight: 600;">واتساب +965 50255870</a> للاستفسار عن خدماتنا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Video modal -->
+    <div id="video-modal" class="video-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="مشغل الفيديو" tabindex="-1">
+        <button class="video-close" aria-label="إغلاق">×</button>
+        <div class="video-wrap"></div>
+    </div>
+
+    <script src="articles.js" defer></script>
+</body>
+</html>

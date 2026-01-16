@@ -1,0 +1,22 @@
+node_modules/
+package-lock.json
+.DS_Store
+.env
+*.log
+reports/
+build/
+
+# Generated / Build files
+index.single.html
+scripts/build-single.js
+
+# Archive files (old versions)
+archive/
+backup/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
