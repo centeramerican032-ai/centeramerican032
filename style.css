@@ -182,20 +182,27 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    z-index: 2000;
+    z-index: 1500;
     border: 2px solid rgba(13,93,13,0.06);
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     animation: slideInFromLeft 0.6s ease-out;
 }
 
-@keyframes slideInFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
+@media (max-width: 768px) {
+    .site-icon {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        left: 10px;
     }
-    to {
-        opacity: 1;
-        transform: translateX(0);
+}
+
+@media (max-width: 480px) {
+    .site-icon {
+        width: 45px;
+        height: 45px;
+        bottom: 8px;
+        left: 8px;
     }
 }
 
@@ -365,6 +372,35 @@ a:hover {
 /* Better gallery performance spacing */
 .gallery-grid img { width: 100%; height: auto; display: block; border-radius: 8px; }
 
+/* Global container styling - Responsive */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
 
 @media (prefers-reduced-motion: reduce) {
     * { animation-duration:0.001ms !important; transition-duration:0.001ms !important; scroll-behavior: auto !important; }
@@ -444,6 +480,10 @@ body { font-family: 'Cairo', sans-serif; background: var(--bg); color: var(--dar
     body, html { overflow-x: hidden; }
     .container { padding: 0 15px !important; }
     img { max-width: 100%; height: auto; }
+    nav { padding: 12px 0; }
+    .nav-container { padding: 0 10px; }
+    .logo { font-size: 1.6rem; padding: 10px 12px; gap: 6px; }
+    .logo span { font-size: 1.8rem; }
 }
 
 .gallery-grid .gallery-caption { text-align:center; font-size:.95rem; color:#1a1a1a; margin-top:8px; }
@@ -1159,6 +1199,7 @@ section:hover::after {
     height: 75px;
     font-size: 38px;
     bottom: 20px;
+    z-index: 2001;
 }
 
 .call-btn {
@@ -1166,6 +1207,7 @@ section:hover::after {
     height: 70px;
     font-size: 36px;
     bottom: 105px;
+    z-index: 2000;
 }
 
 .instagram-btn {
@@ -1173,6 +1215,47 @@ section:hover::after {
     height: 75px;
     font-size: 38px;
     bottom: 190px;
+    z-index: 1999;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        width: 56px;
+        height: 56px;
+        font-size: 26px;
+        bottom: 16px;
+        right: 16px;
+    }
+    .call-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        bottom: 80px;
+        right: 16px;
+    }
+    .instagram-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        bottom: 144px;
+        right: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+        bottom: 12px;
+        right: 12px;
+    }
+    .call-btn {
+        display: none;
+    }
+    .instagram-btn {
+        display: none;
+    }
 }
 
 /* Location Button Styling - Enhanced Professional Button */
@@ -1614,6 +1697,29 @@ a:hover::before {
         width: 100%;
         padding: 12px !important;
         font-size: 0.9rem;
+    }
+    
+    nav { 
+        padding: 10px 0;
+    }
+    
+    .nav-container { 
+        padding: 0 8px;
+    }
+    
+    .logo { 
+        font-size: 1.1rem; 
+        padding: 6px 8px;
+        gap: 4px;
+    }
+    
+    .logo span { 
+        font-size: 1.2rem;
+    }
+    
+    .nav-toggle { 
+        font-size: 1.4rem; 
+        padding: 4px 8px;
     }
 }
 
